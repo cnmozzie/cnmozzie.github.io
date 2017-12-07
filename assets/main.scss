@@ -2,8 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
+@import "bootstrap";
 
-.mywrapper {
-  width: 930px;
+.wrapper {
+  max-width: 930px;
   margin: 0 auto;
 }
