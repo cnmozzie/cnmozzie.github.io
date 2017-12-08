@@ -7,3 +7,24 @@ This is a website supported by github pages and jekyll.
  - [about jekyll](https://jekyllrb.com/)
  - [about markdown](https://en.wikipedia.org/wiki/Markdown)
  - [about git and github](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+
+If you come with any problems, report an issue [here](https://github.com/cnmozzie/cnmozzie.github.io/issues).
+
+## Getting start
+
+1. install jekyll and create a new Jekyll site at ./iontrapnet.github.io by running ```jekyll new iontrapnet.github.io```
+2. move to the project folder and run ```git init``` to build a Git repository
+3. run ```$ git remote add origin git@github.com:iontrapnet/iontrapnet.github.io.git``` and ```git push -u origin master``` to connect with the remote repository on Github
+4. Now you should have a github page on [https://iontrapnet.github.io](https://iontrapnet.github.io)
+
+## Customization
+
+Jekyll use a default theme called minima, we will overriding theme defaults by [this guide](https://jekyllrb.com/docs/themes/#overriding-theme-defaults).
+
+### Global setting
+
+We add css and javascript by overriding _includes/head.html.
+
+ - We use bootstrap's css by adding code ```<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">```
+ - We use fontawesome's icon by adding code ```<script src="https://use.fontawesome.com/71359ad2a5.js"></script>```
+
