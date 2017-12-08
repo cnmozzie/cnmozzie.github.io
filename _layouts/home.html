@@ -4,23 +4,29 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <br />
+  <h1>Home&nbsp;<verysmall>Trapped Ions Quantum Computer</verysmall></h1>
+
+  <br /><br />
+  <h2><a href="/">Posts</a></h2>
   
   {{ content }}
 
-  <ul class="post-list">
+  <ul  class="list-unstyled">
     {% for post in site.posts %}
       <li>
+        <i class="fa fa-calendar"></i>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
+        &nbsp;-&nbsp;
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
       </li>
     {% endfor %}
   </ul>
 
+  <!--
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+  -->
+  
 </div>
