@@ -3,24 +3,23 @@
 
 @import "{{ site.theme }}";
 
-/*To leave blank on both sides of the page*/
+/*Leave blank on both sides of the page*/
 .wrapper {
   max-width: 930px;
   margin: 0 auto;
 }
 
+/*Change the default layout*/
 header {
   width: 220px;
   float: left;
   position: fixed;
 }
-
 section {
   width: 600px;
   float: right;
   padding-bottom: 50px;
 }
-
 footer {
   width: 220px;
   float: left;
@@ -28,6 +27,7 @@ footer {
   bottom: 50px;
 }
 
+/*Change font style of the website*/
 body {
   background-color: #fff;
   padding: 50px;
@@ -37,6 +37,7 @@ body {
   font-weight: 400;
 }
 
+/*Make a subtitle in home.html*/
 verysmall {
   font-size: 30%;
 }

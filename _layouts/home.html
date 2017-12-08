@@ -15,7 +15,7 @@ layout: default
   <ul  class="list-unstyled">
     {% for post in site.posts %}
       <li>
-        <i class="fa fa-calendar"></i>
+        <i class="fas fa-calendar-alt"></i>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         &nbsp;-&nbsp;
