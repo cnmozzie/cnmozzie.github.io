@@ -10,6 +10,7 @@ This is a website supported by github pages and jekyll.
  - [about git and github](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
  - [about bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
  - [about fontawesome](https://fontawesome.com/icons?d=gallery)
+ - [about math support](https://jekyllrb.com/docs/extras/#math-support)
 
 If you come with any problems, report an issue [here](https://github.com/cnmozzie/cnmozzie.github.io/issues).
 
@@ -42,3 +43,17 @@ We modified `_includes/header` and `_includes/footer` to change the content of h
 ### Change the home layout
 
 We modified `_layouts/home.html` to change the home layout.
+
+## Daily use
+
+### To publish a post
+
+Just put your post in _post file. The file name must have the format: YYYY-MM-DD-YOUR_TITLE. It should be a markdown or html file. Remember adding layout and title at the beginning of the post, like
+```
+
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+```
+You can use LaTex symbol by typing `$$MATH_CONTENT$$` in your post. Click [here](https://kramdown.gettalong.org/syntax.html#math-blocks) to learn more about it.
