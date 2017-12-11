@@ -1,0 +1,41 @@
+---
+layout: page
+title: Members
+permalink: /members
+---
+
+{% for member_hash in site.data.members %}
+{% assign member = member_hash[1] %}
+
+<div class="media">
+    <img class="align-self-center mr-3" src="{{ member.imgsrc }}" alt="Generic placeholder image">
+    <div class="media-body">
+        <h5 class="mt-0">{{ member.username }}</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr>
+                <th scope="row">Name</th>
+                <td>{{ member.name }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Email</th>
+                <td><a href="mailto:{{ member.email }}">{{ member.email }}</a></td>
+            </tr>
+            <tr>
+                <th scope="row">Mobile</th>
+                <td>{{ member.mobile }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Address</th>
+                <td>{{ member.address }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Homepage</th>
+                <td><a href="{{ member.homepage }}" target="_blank">{{ member.homepage }}</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endfor %}
