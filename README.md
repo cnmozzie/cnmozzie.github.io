@@ -30,8 +30,9 @@ We add css and javascript by overriding `_includes/head.html`.
 
  - We use bootstrap css by adding code ```<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">```
  - We use fontawesome icons by adding code ```<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>```
- - we add costumer css in `assets/main.scss` where we first import css from minima theme
-
+ - We add costumer css in `assets/main.scss` where we first import css from minima theme
+ - We render the LaTex in the post by adding code ```<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>```
+ 
 ### Change the default layout
 
 We first define a wrapper class in `main.scss` as a container. The whole content will show on this wrapper. Then we divided the page to a header, a footer and a section. Their position are defined in `main.scss`. 
